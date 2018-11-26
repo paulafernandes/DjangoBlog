@@ -1,0 +1,19 @@
+1. views.py
+Create functions to return results
+
+2. urls.py from app
+add url to views.function
+
+3. urls.py from main project
+add url to map app to project
+
+4. settings.py from main project
+on INSTALLED_APPS add new app (from apps.py in app)
+
+5. create folder templates/app_name
+
+6. add html files
+
+7. views.py
+use render to redirect to new html files
+

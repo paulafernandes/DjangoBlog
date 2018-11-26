@@ -1,0 +1,54 @@
+**********************************************************
+CASE IF EXISTS PROJECT, CREATE REPOSITORY
+**********************************************************
+
+1. Install git for windows
+
+2. check version: 
+$ git --version
+
+3. It is a good idea to introduce yourself to Git with your name and public email address before doing any operation. The easiest way to do so is:
+$ git config --global user.name "Your Name Comes Here"
+$ git config --global user.email you@yourdomain.example.com
+
+4. Start from existing code, in shell go to project dir and:
+$ git init
+
+5. Before first commit:
+$ git status
+
+6. Create gitignore file (when are files that we dont want to upload)
+$ touch .gitignore
+
+7. Open file add: (add files that we dont want to upload. ex:)
+.SD_STORE
+.project
+*.pyc
+
+8. Add files to stage area:
+$ git add -A  (for all)
+$ git add .filename 
+
+9. Remove files from stage area (if needed):
+$ git reset .filename
+$git reset (remove all)
+
+10. First commit
+$ git add -A
+$ git commit -m "Initial Commit"
+$ git status
+$ git log
+
+**********************************************************
+CASE CONNECT TO EXISTING REPO (REMOTE)
+**********************************************************
+1. git clone <url> <where to clone>
+
+2. git clone https://github.com/paulafernandes/CExercices . 
+(ex: url of git file // dot at end means current dir)
+
+**********************************************************
+VIEWING INFORMATION ABOUT THE REMOTE REPOSITORY
+**********************************************************
+1. 
+
