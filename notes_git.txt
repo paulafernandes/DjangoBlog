@@ -5,20 +5,20 @@ CASE IF EXISTS PROJECT, CREATE REPOSITORY
 1. Install git for windows
 
 2. check version: 
-$ git --version
+git --version
 
 3. It is a good idea to introduce yourself to Git with your name and public email address before doing any operation. The easiest way to do so is:
-$ git config --global user.name "Your Name Comes Here"
-$ git config --global user.email you@yourdomain.example.com
+git config --global user.name "Your Name Comes Here"
+git config --global user.email you@yourdomain.example.com
 
 4. Start from existing code, in shell go to project dir and:
-$ git init
+git init
 
 5. Before first commit:
-$ git status
+git status
 
 6. Create gitignore file (when are files that we dont want to upload)
-$ touch .gitignore
+touch .gitignore
 
 7. Open file add: (add files that we dont want to upload. ex:)
 .SD_STORE
@@ -26,18 +26,18 @@ $ touch .gitignore
 *.pyc
 
 8. Add files to stage area:
-$ git add -A  (for all)
-$ git add .filename 
+git add -A  (for all)
+git add .filename 
 
 9. Remove files from stage area (if needed):
-$ git reset .filename
+git reset .filename
 $git reset (remove all)
 
 10. First commit
-$ git add -A
-$ git commit -m "Initial Commit"
-$ git status
-$ git log
+git add -A
+git commit -m "Initial Commit"
+git status
+git log
 
 **********************************************************
 CASE CONNECT TO EXISTING REPO (REMOTE)
@@ -50,5 +50,56 @@ CASE CONNECT TO EXISTING REPO (REMOTE)
 **********************************************************
 VIEWING INFORMATION ABOUT THE REMOTE REPOSITORY
 **********************************************************
-1. 
+1. git remote -v (lists info of the repository)
+
+2. git branch -a (lists all branchs, local and remote)
+
+**********************************************************
+PUSHING CHANGES
+**********************************************************
+1. After commit the files:
+
+2. git pull origin master (to get latest version remote)
+
+2. git push origin master (to send latest version local)
+
+**********************************************************
+CREATE A BRANCH FOR DESIRED FEATURE
+**********************************************************
+1. git branch <BranchName> (creates new branch)
+
+2. git checkout <BranchName> (moves dir to inside branch)
+
+3. git push -u origin <BranchName> (-u associates branch with master.
+Only need to do the 1st time)
+
+4. git branch -a
+
+**********************************************************
+MERGE A BRANCH
+**********************************************************
+1. git checkout master (moves dir to master)
+
+2. git pull origin master (pull latest changes from remote)
+
+3. git branch --merge (prepares the merge)
+
+4. git merge <BranchName> (does merge)
+
+5. git push origin master (push changes to remote)
+
+**********************************************************
+DELETING A BRANCH
+**********************************************************
+1. git branch --merge
+
+2. git branch -d <BranchName> (delete on local)
+
+3. git branch -a
+
+4. git push origin --delete <BranchName> (delete on remote)
+
+
+
+
 
