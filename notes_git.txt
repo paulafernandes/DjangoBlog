@@ -31,7 +31,7 @@ git add .filename
 
 9. Remove files from stage area (if needed):
 git reset .filename
-$git reset (remove all)
+git reset (remove all)
 
 10. First commit
 git add -A
@@ -99,6 +99,16 @@ DELETING A BRANCH
 
 4. git push origin --delete <BranchName> (delete on remote)
 
+**********************************************************
+UNDO MISTAKES
+**********************************************************
+1. git checkout .FileName (on local)
+
+2. After files are commited, to change the message:
+git commit --amend -m "New Message"
+
+3. To add another file when already commited:
+git commit --amend
 
 
 
