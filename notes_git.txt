@@ -31,17 +31,19 @@ git add .filename
 
 9. Remove files from stage area (if needed):
 git reset .filename
-<<<<<<< HEAD
 git reset (remove all)
-=======
-$git reset (remove all)
->>>>>>> e327b4940281687286a458a5bc889fc39314e070
 
 10. First commit
 git add -A
 git commit -m "Initial Commit"
 git status
 git log
+
+11. Add remote git
+git remote add origin remote repository URL
+# Sets the new remote
+git remote -v
+# Verifies the new remote URL
 
 **********************************************************
 CASE CONNECT TO EXISTING REPO (REMOTE)
@@ -103,7 +105,6 @@ DELETING A BRANCH
 
 4. git push origin --delete <BranchName> (delete on remote)
 
-<<<<<<< HEAD
 **********************************************************
 UNDO MISTAKES
 **********************************************************
@@ -114,8 +115,7 @@ git commit --amend -m "New Message"
 
 3. To add another file when already commited:
 git commit --amend
-=======
->>>>>>> e327b4940281687286a458a5bc889fc39314e070
+
 
 
 
