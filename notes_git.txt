@@ -2,7 +2,8 @@
 CASE IF EXISTS PROJECT, CREATE REPOSITORY
 **********************************************************
 
-1. Install git for windows
+1. Install git for windows:
+https://git-scm.com/download/win
 
 2. check version: 
 git --version
